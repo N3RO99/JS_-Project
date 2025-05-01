@@ -47,16 +47,15 @@ else{
 // // checkRequired
 
 
-// function checkRequired(inputArray) {
-//     let allValid = true;
-//     inputArray.forEach((input)=>{
-//         if (input.value.trim() === "" ) {
-//             showError(input, `${getFieldName(input)} is required`)
-//         }
-//     });
-//     return allValid
-
-// }
+ function checkRequired(inputArray) {
+     let allValid = true;
+     inputArray.forEach((input)=>{
+         if (input.value.trim() === "" ) {
+             showError(input, `${getFieldName(input)} is required`)
+         }
+     });
+     return allValid
+ }
 
 // checkLength
 function checkLength(input,min,max){
